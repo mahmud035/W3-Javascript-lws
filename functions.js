@@ -1,3 +1,5 @@
+'use strict';
+
 //* ------JavaScript Function call()-------
 
 /* const person = {
@@ -67,3 +69,22 @@ const person1 = {
 };
 
 console.log(person.fullName.apply(person1, ['Oslo', 'Norway'])); */
+
+//* --------JavaScript Function bind()-------
+
+/* const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  fullName: function () {
+    return this.firstName + ' ' + this.lastName;
+  },
+};
+
+const member = {
+  firstName: 'Hege',
+  lastName: 'Nilsen',
+};
+
+// The member object borrows the fullName method from the person object:
+let fullName = person.fullName.bind(member);
+console.log(fullName()); */

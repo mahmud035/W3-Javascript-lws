@@ -1,3 +1,5 @@
+'use strict';
+
 //* -------JavaScript Object Properties--------
 
 const myObj = {
